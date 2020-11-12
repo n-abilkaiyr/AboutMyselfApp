@@ -8,10 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var greetinLabel: UILabel!
+   
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        greetinLabel.text! += "\(user.userName)!"
+      
     }
 
 
